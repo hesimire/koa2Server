@@ -1,0 +1,49 @@
+{
+  "dataArr": [
+    {
+      "id": 1,
+      "name": "小米电脑PLUS",
+      "newPrice": 1700,
+      "oldPrice": 1900,
+      "class": "computer",
+      "cClass": "电脑",
+      "imgUrl": "http://192.168.1.4:3001/images/computer1.webp"
+    },
+    {
+      "id": 2,
+      "name": "小米6",
+      "newPrice": 1200,
+      "oldPrice": 1500,
+      "class": "phone",
+      "cClass": "手机",
+      "imgUrl": "http://192.168.1.4:3001/images/phone1.webp"
+    },
+    {
+      "id": 3,
+      "name": "小米6 PLUS",
+      "newPrice": 2700,
+      "oldPrice": 2900,
+      "class": "phone",
+      "cClass": "手机",
+      "imgUrl": "http://192.168.1.4:3001/images/phone2.webp"
+    },
+    {
+      "id": 4,
+      "name": "小米智能电饭锅",
+      "newPrice": 700,
+      "oldPrice": 900,
+      "class": "pot",
+      "cClass": "电饭锅",
+      "imgUrl": "http://192.168.1.4:3001/images/pot1.webp"
+    },
+    {
+      "id": 5,
+      "name": "小米电视",
+      "newPrice": 3700,
+      "oldPrice": 4900,
+      "class": "TV",
+      "cClass": "电视",
+      "imgUrl": "http://192.168.1.4:3001/images/tv1.webp"
+    }
+  ]
+}

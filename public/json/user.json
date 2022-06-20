@@ -1,0 +1,23 @@
+{
+  "userArr": [
+    {
+      "id": 1,
+      "account": "zhangsan",
+      "password": "123456",
+      "nickName":"张三"
+    },
+    {
+      "id": 2,
+      "account": "user123",
+      "password": "123456",
+      "nickName": "李四"
+    },
+    {
+      "id": 3,
+      "account": "user234",
+      "password": "2346561",
+      "nickName": "王五"
+    }
+  ],
+  "total": 3
+}

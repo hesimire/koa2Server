@@ -6,8 +6,10 @@ router.get('/', function (ctx, next) {
   ctx.body = 'this is a data response!'
 })
 
-router.get('/bar', function (ctx, next) {
+router.get('/swiperData', function (ctx, next) {
+
   ctx.body = 'this is a data/bar response'
+  
 })
 
-module.exports = router
+module.exports = router;

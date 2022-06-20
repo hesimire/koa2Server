@@ -1,0 +1,214 @@
+{
+  "dataArr": [
+    {
+      "id": 1,
+      "name": "小米电脑PLUS",
+      "newPrice": 1700,
+      "oldPrice": 1900,
+      "class": "computer",
+      "cClass": "电脑",
+      "imgUrl": "http://192.168.1.4:3001/images/computer1.webp",
+      "info": "第11代智能英特尔酷睿i5-1135G7/Windows 11 家庭中文版/16G/512GB SSD/英特尔锐钜Xe显卡/14英寸FHD 广视角 LED背光显示屏 100% sRGB 色域/银色"
+    },
+    {
+      "id": 2,
+      "name": "小米电脑巨无霸",
+      "newPrice": 2200,
+      "oldPrice": 2500,
+      "class": "computer",
+      "cClass": "电脑",
+      "imgUrl": "http://192.168.1.4:3001/images/computer2.webp",
+      "info": "第11代智能英特尔酷睿i7-1165G7/Windows 11 家庭中文版/16G/512GB SSD/英特尔锐钜Xe显卡/15.6英寸FHD 广视角 LED背光显示屏/黑色"
+    },
+    {
+      "id": 3,
+      "name": "小米电脑 荣耀6",
+      "newPrice": 2700,
+      "oldPrice": 2900,
+      "class": "computer",
+      "cClass": "电脑",
+      "imgUrl": "http://192.168.1.4:3001/images/computer3.webp",
+      "info": "i7-10750H/Windows 10 家庭中文版/16GB/512GB SSD/Nvidia Quadro P620 4GB DDR5独立显存/15.6英寸FHD 广视角 LED背光显示屏"
+    },
+    {
+      "id": 4,
+      "name": "小米电脑 荣耀6PLUS",
+      "newPrice": 3700,
+      "oldPrice": 3900,
+      "class": "computer",
+      "cClass": "电脑",
+      "imgUrl": "http://192.168.1.4:3001/images/computer4.webp",
+      "info": "i5-1135G7/Windows 10 家庭中文版/8GB/512GB SSD/锐炬Xe集显/14英寸FHD 广视角技术 72%NTSC LP高亮屏/LTE版/内置SIM卡(24个月流量)"
+    },
+    {
+      "id": 5,
+      "name": "小米扫地机器人1号",
+      "newPrice": 400,
+      "oldPrice": 500,
+      "class": "sweep",
+      "cClass": "扫地机器人",
+      "imgUrl": "http://192.168.1.4:3001/images/furniture1.webp",
+      "info": "吸拖洗烘一体拖地机器人洗地机擦地机 智能全自动清洗 免洗"
+    },
+    {
+      "id": 6,
+      "name": "小米扫地机器人2号",
+      "newPrice": 500,
+      "oldPrice": 600,
+      "class": "sweep",
+      "cClass": "扫地机器人",
+      "imgUrl": "http://192.168.1.4:3001/images/furniture2.webp",
+      "info": "自清洁扫拖机器人G10S 扫拖洗全能一体 家用智能免洗拖布自动集尘扫地机器人A4600RR"
+    },
+    {
+      "id": 7,
+      "name": "小米扫地机器人3号",
+      "newPrice": 600,
+      "oldPrice": 700,
+      "class": "sweep",
+      "cClass": "扫地机器人",
+      "imgUrl": "http://192.168.1.4:3001/images/furniture3.webp",
+      "info": "自动免洗抹布扫地机器人扫拖一体智能家用洗地机自动集尘DEX11 旗舰X1 OMNI全能版"
+    },
+    {
+      "id": 8,
+      "name": "小米扫地机器人4号",
+      "newPrice": 700,
+      "oldPrice": 800,
+      "class": "sweep",
+      "cClass": "扫地机器人",
+      "imgUrl": "http://192.168.1.4:3001/images/furniture1.webp",
+      "info": "拖地机擦地机 激光导航 4000Pa超大吸力 小爱同学&米家APP互联"
+    },
+    {
+      "id": 9,
+      "name": "小米6",
+      "newPrice": 1200,
+      "oldPrice": 1500,
+      "class": "phone",
+      "cClass": "手机",
+      "imgUrl": "http://192.168.1.4:3001/images/phone1.webp",
+      "info": "5000万疾速影像 120W秒充 12GB+256GB黑色 5G手机 小米合约机 移动用户专享"
+    },
+    {
+      "id": 10,
+      "name": "小米6 PLUS",
+      "newPrice": 2700,
+      "oldPrice": 2900,
+      "class": "phone",
+      "cClass": "手机",
+      "imgUrl": "http://192.168.1.4:3001/images/phone2.webp",
+      "info": "天玑8100 144HzLCD旗舰直屏 67W快充 6GB+128GB子夜黑 5G智能手机 小米红米"
+    },
+    {
+      "id": 11,
+      "name": "小米7 ",
+      "newPrice": 3000,
+      "oldPrice": 3100,
+      "class": "phone",
+      "cClass": "手机",
+      "imgUrl": "http://192.168.1.4:3001/images/phone3.webp",
+      "info": "5000mAh大电量 1300万AI相机 八核处理器 人脸解锁 4GB+64GB 砂石黑 智能手机"
+    },
+    {
+      "id": 12,
+      "name": "小米智能电饭锅",
+      "newPrice": 700,
+      "oldPrice": 900,
+      "class": "pot",
+      "cClass": "电饭锅",
+      "imgUrl": "http://192.168.1.4:3001/images/pot1.webp",
+      "info": "新一代微压IH OLED智显小黑屏 米饭软硬可调IOT电饭煲电饭锅多用途锅"
+    },
+    {
+      "id": 13,
+      "name": "小米电饭煲2号",
+      "newPrice": 1500,
+      "oldPrice": 1700,
+      "class": "pot",
+      "cClass": "电饭煲",
+      "imgUrl": "http://192.168.1.4:3001/images/pot2.webp",
+      "info": "饭锅C1 迷你电饭煲小 24H智能预约 附赠蒸屉（推荐2-5人）"
+    },
+    {
+      "id": 14,
+      "name": "小米电饭煲PLUS",
+      "newPrice": 1700,
+      "oldPrice": 1900,
+      "class": "pot",
+      "cClass": "电饭煲",
+      "imgUrl": "http://192.168.1.4:3001/images/pot3.webp",
+      "info": "电饭煲PLUS APP智能IOT互联预约（推4-5人）"
+    },
+    {
+      "id": 15,
+      "name": "小米电饭煲巨无霸",
+      "newPrice": 2200,
+      "oldPrice": 2400,
+      "class": "pot",
+      "cClass": "电饭煲",
+      "imgUrl": "http://192.168.1.4:3001/images/pot4.webp",
+      "info": "小米（MI）米家电饭煲C1 3L小型迷你4L家用智能预约多功能电饭锅 米家电饭煲C1 3L"
+    },
+    {
+      "id": 16,
+      "name": "小米电视",
+      "newPrice": 3700,
+      "oldPrice": 4900,
+      "class": "TV",
+      "cClass": "电视",
+      "imgUrl": "http://192.168.1.4:3001/images/tv1.webp",
+      "info": "米家智能电饭煲微压版 家用小型多功能电饭锅大容量煲汤蒸煮饭锅可调多用途锅蒸饭锅3升4升 【米家智能电饭煲】IH微压版3L+小黑屏"
+    },
+    {
+      "id": 17,
+      "name": "小米电视PLUS",
+      "newPrice": 4100,
+      "oldPrice": 4400,
+      "class": "TV",
+      "cClass": "电视",
+      "imgUrl": "http://192.168.1.4:3001/images/tv2.webp",
+      "info": " 金属全面屏 远场语音 逐台校准4K超高清智能教育电视机L75M7-EA"
+    },
+    {
+      "id": 18,
+      "name": "小米电视巨无霸",
+      "newPrice": 5000,
+      "oldPrice": 5300,
+      "class": "TV",
+      "cClass": "电视",
+      "imgUrl": "http://192.168.1.4:3001/images/tv3.webp",
+      "info": "立体声扬声器 64位处理器 享空间私享影音 智能网络教育电视 L32R6-A"
+    },
+    {
+      "id": 19,
+      "name": "小米智能手表",
+      "newPrice": 1000,
+      "oldPrice": 1200,
+      "class": "watch",
+      "cClass": "智能手表",
+      "imgUrl": "http://192.168.1.4:3001/images/watch1.webp",
+      "info": " 4G全网通 高清视频 防水 GPS定位 超长待机 支持小爱同学 "
+    },
+    {
+      "id": 20,
+      "name": "小米智能手表PLUS",
+      "newPrice": 1300,
+      "oldPrice": 1500,
+      "class": "watch",
+      "cClass": "智能手表",
+      "imgUrl": "http://192.168.1.4:3001/images/watch2.webp",
+      "info": "小米手表 高清大屏 /多种运动模式 /超长续航 运动监测 支持GPS 多功能NFC 红米手表2"
+    },
+    {
+      "id": 21,
+      "name": "小米智能手表mi",
+      "newPrice": 1500,
+      "oldPrice": 1700,
+      "class": "watch",
+      "cClass": "智能手表",
+      "imgUrl": "http://192.168.1.4:3001/images/watch3.webp",
+      "info": "运动智能手表 蓝宝石玻璃 金属中框 蓝牙通话 实时血氧心率检测 "
+    }
+  ]
+}

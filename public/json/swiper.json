@@ -1,0 +1,16 @@
+{
+  "dataArr": [
+    {
+      "id": 1,
+      "imgUrl": "http://192.168.1.4:3001/images/lunbo1.webp"
+    },
+    {
+      "id": 2,
+      "imgUrl": "http://192.168.1.4:3001/images/lunbo2.webp"
+    },
+    {
+      "id": 3,
+      "imgUrl": "http://192.168.1.4:3001/images/lunbo3.webp"
+    }
+  ]
+}

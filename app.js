@@ -10,13 +10,17 @@ const cors = require('@koa/cors')
 const index = require('./routes/index')
 const users = require('./routes/users')
 const datas = require('./routes/data')
+const svg = require('./routes/svg')
+const routeUsers = require('./routes/routeUsers')
+const uniapp = require('./routes/uniapp')
+const shops = require('./routes/uniapp_shops')
+const carts = require('./routes/uniapp_cart')
 
 // error handler
 onerror(app)
 
 // middlewares
 app.use(cors())
-
 app.use(bodyparser({
   enableTypes:['json', 'form', 'text']
 }))
@@ -42,6 +46,11 @@ app.use(async (ctx, next) => {
 app.use(index.routes(), index.allowedMethods())
 app.use(users.routes(), users.allowedMethods())
 app.use(datas.routes(), datas.allowedMethods())
+app.use(svg.routes(), svg.allowedMethods())
+app.use(uniapp.routes(), uniapp.allowedMethods())
+app.use(shops.routes(), shops.allowedMethods())
+app.use(routeUsers.routes(), routeUsers.allowedMethods())
+app.use(carts.routes(), carts.allowedMethods())
 
 // error-handling
 app.on('error', (err, ctx) => {
