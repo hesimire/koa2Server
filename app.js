@@ -15,6 +15,7 @@ const routeUsers = require('./routes/routeUsers')
 const uniapp = require('./routes/uniapp')
 const shops = require('./routes/uniapp_shops')
 const carts = require('./routes/uniapp_cart')
+const upload = require('./routes/upload')
 
 // error handler
 onerror(app)
@@ -27,7 +28,7 @@ app.use(bodyparser({
 app.use(json())
 app.use(logger())
 app.use(require('koa-static')(__dirname + '/public'))
-// app.use(require('koa-static')(__dirname + '/public/images'))
+app.use(require('koa-static')(__dirname + '/public/images'))
 // app.use(require('koa-static')(__dirname + '/public'))
 
 app.use(views(__dirname + '/views', {
@@ -51,6 +52,7 @@ app.use(uniapp.routes(), uniapp.allowedMethods())
 app.use(shops.routes(), shops.allowedMethods())
 app.use(routeUsers.routes(), routeUsers.allowedMethods())
 app.use(carts.routes(), carts.allowedMethods())
+app.use(upload.routes(), upload.allowedMethods())
 
 // error-handling
 app.on('error', (err, ctx) => {

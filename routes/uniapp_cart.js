@@ -40,7 +40,7 @@ router.post('/addCart', async function (ctx, next) {
 })
 
 
-// 获取所有订单列表
+// 获取用户所有订单列表
 router.post('/getCartMoreList', async (ctx, next) => {
   const data = ctx.request.body;
   const foundResult = await DB.findDocuments('carts', {
@@ -53,7 +53,17 @@ router.post('/getCartMoreList', async (ctx, next) => {
   }
 })
 
-// 获取相应订单列表
+// 获取后台管理所有订单列表
+router.get('/getAllCartsList', async (ctx, next) => {
+  const foundResult = await DB.findDocuments('carts', {})
+  ctx.body = {
+    err_code: 0,
+    message: '订单发起成功',
+    dataArr: foundResult
+  }
+})
+
+// 获取用户相应订单列表
 router.post('/getCartMoreListByStatus', async (ctx, next) => {
   const data = ctx.request.body;
   console.log(data.status);
@@ -65,7 +75,7 @@ router.post('/getCartMoreListByStatus', async (ctx, next) => {
   const DataList = []
 
   foundResult.forEach((item) => {
-    if(item.status == data.status) {
+    if (item.status == data.status) {
       DataList.push(item)
     }
   })
@@ -116,6 +126,67 @@ router.post('/changeCarts', async (ctx, next) => {
 })
 
 
+// 订单修改状态
+router.patch('/changeCartsStatus', async (ctx, next) => {
+  const data = ctx.request.body;
+  // console.log(data);
+  const { userId, key: _id, status } = data;
+  const foundResult = await DB.findDocuments('carts', {
+    userId,
+    _id: DB.getObjectId(_id)
+  })
+  console.log(foundResult);
+  if (foundResult.length >= 1) {
+    const updateDataResult = await DB.updateDocument('carts', {
+      userId,
+      _id: DB.getObjectId(_id)
+    }, {
+      status
+    });
+    console.log(updateDataResult);
+    if (updateDataResult.acknowledged == true && updateDataResult.modifiedCount == 1) {
+      ctx.body = {
+        err_code: 0,
+        message: '订单修改成功',
+      }
+    } else {
+      ctx.body = {
+        err_code: 1,
+        message: '订单修改失败',
+      }
+    }
+  } else {
+    ctx.body = {
+      err_code: 1,
+      message: '订单修改失败',
+    }
+  }
+
+})
+
+// 删除订单
+router.delete('/removeCarts', async (ctx, next) => {
+  const data = ctx.query;
+  // console.log(data);
+  const { _id } = data;
+  const deleteDataResult = await DB.removeDocument('carts', {
+    _id: DB.getObjectId(_id)
+  })
+  // console.log(findData);
+  // console.log(deleteDataResult);
+  if (deleteDataResult.acknowledged == true && deleteDataResult.deletedCount == 1) {
+    ctx.body = {
+      err_code: 0,
+      message: '删除订单成功',
+    }
+  } else {
+    ctx.body = {
+      err_code: 1,
+      message: '删除订单失败',
+    }
+  }
+})
+
 // 订单数量
 router.post('/getCartMoreListNum', async function (ctx, next) {
   const data = ctx.request.body;
@@ -151,8 +222,12 @@ router.post('/getCartMoreListNum', async function (ctx, next) {
     err_code: 0,
     message: '订单发起成功',
     // dataArr: foundResult
-    ListNum:DataList
+    ListNum: DataList
   }
 })
+
+
+
+
 
 module.exports = router
